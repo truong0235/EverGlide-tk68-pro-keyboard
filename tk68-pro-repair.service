@@ -1,0 +1,11 @@
+[Unit]
+Description=Repair Tk68 Pro Bluetooth keyboard
+After=bluetooth.service
+Requires=bluetooth.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/sbin/tk68-pro-repair
+TimeoutStartSec=330
+Nice=10
+IOSchedulingClass=idle

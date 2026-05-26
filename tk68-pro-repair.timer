@@ -1,0 +1,10 @@
+[Unit]
+Description=Start Tk68 Pro repair after boot
+
+[Timer]
+OnBootSec=20s
+AccuracySec=5s
+Unit=tk68-pro-repair.service
+
+[Install]
+WantedBy=timers.target
